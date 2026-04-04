@@ -8,8 +8,5 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: poached_eggs
-      url: https://github.com/omwegg/poached-egg-shield-module
-      revision: main
   self:
     path: config
