@@ -9,37 +9,37 @@
 
         default_layer {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T                              &kp Y  &kp U         &kp I      &kp O    &kp P      &kp MINUS
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F     &kp G                              &kp H  &kp J         &kp K      &kp L    &kp EQUAL  &kp INT3
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V     &kp B                              &kp N  &kp M         &kp COMMA  &kp DOT  &kp SQT    &kp RBKT
-&kp ESC    &mo 3  &none  &kp LALT  &kp LGUI  &lt 1 LANG2  &kp SPACE  &kp RET  &lt 2 LANG1  &kp RSHFT  &mo 3   &kp FSLH  &kp SEMI   &kp BSLH
+&kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T                              &kp Y  &kp U         &kp I      &kp O    &kp P          &kp MINUS
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F     &kp G                              &kp H  &kp J         &kp K      &kp L    &kp CARET      &kp BSLH
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V     &kp B                              &kp N  &kp M         &kp COMMA  &kp DOT  &kp SEMI       &kp LS(SEMI)
+&kp LSHFT  &mo 3  &none  &kp LALT  &kp LGUI  &lt 1 LANG2  &kp SPACE  &kp RET  &lt 2 LANG1  &kp RGUI  &mo 3   &kp FSLH  &kp LBKT       &kp RBKT
             >;
         };
 
         lower_layer {
             bindings = <
-&kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT  &kp CARET                        &kp AMPS     &kp ASTRK  &kp LPAR  &kp LBRC      &kp LS(INT1)  &kp UNDER
-&trans    &none   &none     &none       &none      &none                            &none        &none      &none     &kp LBKT      &kp PLUS      &kp LS(INT3)
-&trans    &none   &none     &none       &none      &none                            &none        &none      &kp LT    &kp GT        &kp LS(SQT)   &kp LS(RBKT)
-&trans    &mo 3   &none     &kp LALT    &kp LGUI   &trans       &trans   &kp BSPC  &lt 3 LANG1  &kp RSHFT  &mo 3     &kp QMARK     &kp LS(SEMI)  &kp LS(BSLH)
+&kp EXCL   &kp LS(SQT)  &kp HASH  &kp DOLLAR  &kp PRCNT  &kp AMPS                         &kp SQT      &kp LPAR   &kp RPAR  &kp GRAVE     &kp UNDER     &kp EQUAL
+&kp ESC    &none        &none     &none       &none      &none                            &none        &none      &none     &kp AT        &kp TILDE     &kp PIPE
+&trans     &none        &none     &none       &none      &none                            &none        &none      &kp LT    &kp GT        &kp PLUS      &kp ASTRK
+&trans     &none        &none     &kp LALT    &kp LGUI   &trans       &trans   &kp BSPC  &lt 3 LANG1  &kp RGUI   &mo 3     &kp QMARK     &kp LBRC      &kp RBRC
             >;
         };
 
         raise_layer {
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4    &kp N5    &kp N6                           &kp N7     &kp N8     &kp N9    &kp N0     &kp LS(SEMI)  &kp MINUS
+&kp N1  &kp N2  &kp N3  &kp N4    &kp N5    &kp N6                           &kp N7     &kp N8     &kp N9    &kp N0     &kp PLUS      &kp MINUS
 &none   &none   &none   &none     &none     &none                            &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &none         &none
 &none   &none   &none   &none     &none     &none                            &none      &none      &none     &none      &none         &none
-&trans  &mo 3   &none   &kp LALT  &kp LGUI  &lt 3 LANG2  &kp DEL   &trans  &trans     &kp RSHFT  &mo 3     &none      &none         &none
+&trans  &none   &none   &kp LALT  &kp LGUI  &lt 3 LANG2  &kp DEL   &trans  &trans     &kp RGUI   &mo 3     &none      &none         &none
             >;
         };
 
         bt_layer {
             bindings = <
-&kp F1          &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                      &kp F7         &kp F8         &kp F9       &kp F10   &kp F11  &kp F12
-&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR                  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN
-&studio_unlock  &none         &none         &none         &none         &none                       &none          &mkp LCLK      &mkp MCLK    &mkp RCLK &none    &none
-&kp O           &kp M         &kp U         &none         &none         &none       &none    &none   &none          &none          &none        &kp K     &kp E    &kp N
+&kp F1          &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                      &kp F7         &kp F8         &kp F9       &kp F10    &kp F11    &kp F12
+&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR                  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT  &msc SCRL_DOWN  &msc SCRL_UP
+&studio_unlock  &none         &none         &none         &none         &none                       &none          &none          &mkp LCLK    &mkp MCLK  &mkp RCLK  &none
+&kp O           &kp M         &kp U         &none         &none         &none       &none    &none   &none          &none          &none        &kp K      &kp E      &kp N
             >;
         };
     };
